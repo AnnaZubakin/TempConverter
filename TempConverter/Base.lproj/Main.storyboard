@@ -37,7 +37,7 @@
                                 <color key="maximumTrackTintColor" red="0.9408714277700837" green="0.47986649439560641" blue="0.37993532647733091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="thumbTintColor" systemColor="labelColor"/>
                                 <connections>
-                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dmp-cD-dGr"/>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="xDT-2m-6pl"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator from C to F/K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeF-lU-HZ0">
@@ -114,7 +114,7 @@
                         <outlet property="celsiusLabel" destination="rqi-bf-Ufn" id="Ozy-h9-2X6"/>
                         <outlet property="convertedTempLabel" destination="Zgg-op-QaB" id="ysw-gz-xYK"/>
                         <outlet property="tempSegmentControl" destination="Gn0-kR-Jof" id="KIH-Zm-KfX"/>
-                        <outlet property="tempSlider" destination="udT-AK-Ggq" id="81p-GY-D9g"/>
+                        <outlet property="tempSlider" destination="udT-AK-Ggq" id="d46-ke-7cI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
