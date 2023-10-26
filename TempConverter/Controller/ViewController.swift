@@ -53,7 +53,7 @@ class ViewController: UIViewController {
           
           celsiusLabel.text = "\(celsiusTemperature) °C"
           
-         
+          TemperatureManager.shared.setTemperature(convertedTemperature)
       }
       
       func convertTempFrom(celsius: Int) -> (fahrenheit: Double, kelvin: Double) {

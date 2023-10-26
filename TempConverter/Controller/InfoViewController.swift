@@ -15,6 +15,9 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let temperature = TemperatureManager.shared.getTemperature()
+           finalLabel.text = "temp.: \(temperature)"
+        
     }
 }
 

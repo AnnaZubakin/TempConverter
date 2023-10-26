@@ -14,6 +14,7 @@
 		BC56149D2AEA91FA00FD4F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56149C2AEA91FA00FD4F13 /* Assets.xcassets */; };
 		BC5614A02AEA91FA00FD4F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56149E2AEA91FA00FD4F13 /* LaunchScreen.storyboard */; };
 		BC5614A82AEAE34E00FD4F13 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */; };
+		BC5614AD2AEAEDC000FD4F13 /* TemperatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5614AC2AEAEDC000FD4F13 /* TemperatureManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BC56149F2AEA91FA00FD4F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5614A12AEA91FA00FD4F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		BC5614AC2AEAEDC000FD4F13 /* TemperatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		BC5614872AEA91F700FD4F13 = {
 			isa = PBXGroup;
 			children = (
+				BC5614AC2AEAEDC000FD4F13 /* TemperatureManager.swift */,
 				BC5614922AEA91F700FD4F13 /* TempConverter */,
 				BC5614912AEA91F700FD4F13 /* Products */,
 			);
@@ -58,16 +61,40 @@
 		BC5614922AEA91F700FD4F13 /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
-				BC5614932AEA91F700FD4F13 /* AppDelegate.swift */,
-				BC5614952AEA91F700FD4F13 /* SceneDelegate.swift */,
-				BC5614972AEA91F700FD4F13 /* ViewController.swift */,
-				BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */,
-				BC5614992AEA91F700FD4F13 /* Main.storyboard */,
+				BC5614AB2AEAED9D00FD4F13 /* AppDelegate */,
+				BC5614A92AEAED8600FD4F13 /* Controller */,
+				BC5614AA2AEAED9300FD4F13 /* View */,
 				BC56149C2AEA91FA00FD4F13 /* Assets.xcassets */,
-				BC56149E2AEA91FA00FD4F13 /* LaunchScreen.storyboard */,
 				BC5614A12AEA91FA00FD4F13 /* Info.plist */,
 			);
 			path = TempConverter;
+			sourceTree = "<group>";
+		};
+		BC5614A92AEAED8600FD4F13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5614972AEA91F700FD4F13 /* ViewController.swift */,
+				BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC5614AA2AEAED9300FD4F13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5614992AEA91F700FD4F13 /* Main.storyboard */,
+				BC56149E2AEA91FA00FD4F13 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5614AB2AEAED9D00FD4F13 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC5614932AEA91F700FD4F13 /* AppDelegate.swift */,
+				BC5614952AEA91F700FD4F13 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 				BC5614982AEA91F700FD4F13 /* ViewController.swift in Sources */,
 				BC5614942AEA91F700FD4F13 /* AppDelegate.swift in Sources */,
 				BC5614A82AEAE34E00FD4F13 /* InfoViewController.swift in Sources */,
+				BC5614AD2AEAEDC000FD4F13 /* TemperatureManager.swift in Sources */,
 				BC5614962AEA91F700FD4F13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
