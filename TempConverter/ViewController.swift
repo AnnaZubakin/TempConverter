@@ -31,18 +31,20 @@ class ViewController: UIViewController {
         updateTempLabelFromSlider(value: tempSlider.value)
     }
     
+    
       func updateTempLabelFromSlider(value: Float) {
           let celsiusTemperature = Int(value)
+          var convertedTemperature: Double = 0.0
           let (fahrenheitTemperature, kelvinTemperature) = convertTempFrom(celsius: celsiusTemperature)
           
           let selectedSegmentIndex = tempSegmentControl.selectedSegmentIndex
-          var convertedTemperature: Double
+          
           
           switch selectedSegmentIndex {
-          case 0: // Фаренгейты
+          case 0: // fahrenheit
               convertedTemperature = fahrenheitTemperature
               convertedTempLabel.text = "\(convertedTemperature) F"
-          case 1: // Келвины
+          case 1: // kelvin
               convertedTemperature = kelvinTemperature
               convertedTempLabel.text = "\(convertedTemperature) K"
           default:
@@ -50,6 +52,8 @@ class ViewController: UIViewController {
           }
           
           celsiusLabel.text = "\(celsiusTemperature) °C"
+          
+         
       }
       
       func convertTempFrom(celsius: Int) -> (fahrenheit: Double, kelvin: Double) {

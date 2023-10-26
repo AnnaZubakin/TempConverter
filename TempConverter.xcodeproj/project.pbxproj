@@ -13,6 +13,7 @@
 		BC56149B2AEA91F700FD4F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5614992AEA91F700FD4F13 /* Main.storyboard */; };
 		BC56149D2AEA91FA00FD4F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC56149C2AEA91FA00FD4F13 /* Assets.xcassets */; };
 		BC5614A02AEA91FA00FD4F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC56149E2AEA91FA00FD4F13 /* LaunchScreen.storyboard */; };
+		BC5614A82AEAE34E00FD4F13 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC56149C2AEA91FA00FD4F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC56149F2AEA91FA00FD4F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5614A12AEA91FA00FD4F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				BC5614932AEA91F700FD4F13 /* AppDelegate.swift */,
 				BC5614952AEA91F700FD4F13 /* SceneDelegate.swift */,
 				BC5614972AEA91F700FD4F13 /* ViewController.swift */,
+				BC5614A72AEAE34E00FD4F13 /* InfoViewController.swift */,
 				BC5614992AEA91F700FD4F13 /* Main.storyboard */,
 				BC56149C2AEA91FA00FD4F13 /* Assets.xcassets */,
 				BC56149E2AEA91FA00FD4F13 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				BC5614982AEA91F700FD4F13 /* ViewController.swift in Sources */,
 				BC5614942AEA91F700FD4F13 /* AppDelegate.swift in Sources */,
+				BC5614A82AEAE34E00FD4F13 /* InfoViewController.swift in Sources */,
 				BC5614962AEA91F700FD4F13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

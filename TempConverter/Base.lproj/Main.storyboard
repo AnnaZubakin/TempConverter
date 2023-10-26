@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="96K-G3-nmd">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -108,6 +108,9 @@
                     <navigationItem key="navigationItem" title="Temp Calculator" id="WuU-ID-ZLw">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="sun.max.circle.fill" catalog="system" id="AAo-BI-zeo">
                             <color key="tintColor" red="0.94087142779999999" green="0.47986649440000001" blue="0.3799353265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="Ai3-uw-6bC" kind="show" id="hiT-U8-Oqx"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -119,14 +122,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="3.1484257871064472"/>
+            <point key="canvasLocation" x="1134" y="-8"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Info View Controller-->
+        <scene sceneID="Drh-hE-6iR">
+            <objects>
+                <viewController title="Info View Controller" id="Ai3-uw-6bC" customClass="InfoViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LKa-aq-lC2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NR-5H-pvo">
+                                <rect key="frame" x="112" y="298" width="150" height="70"/>
+                                <color key="backgroundColor" red="0.6660185595" green="0.34311238659999999" blue="0.27413412479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="BSr-vn-y6c"/>
+                                    <constraint firstAttribute="height" constant="70" id="GfY-84-wB0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5KI-5F-Clg"/>
+                        <color key="backgroundColor" red="0.62748281620000002" green="0.81532943250000001" blue="0.76297606790000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="2NR-5H-pvo" firstAttribute="top" secondItem="5KI-5F-Clg" secondAttribute="top" constant="234" id="6Aj-Pf-Yep"/>
+                            <constraint firstItem="2NR-5H-pvo" firstAttribute="leading" secondItem="5KI-5F-Clg" secondAttribute="leading" constant="112" id="WWn-Tm-8qf"/>
+                            <constraint firstItem="5KI-5F-Clg" firstAttribute="trailing" secondItem="2NR-5H-pvo" secondAttribute="trailing" constant="113" id="tXK-oN-atF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="kFg-AT-xSp"/>
+                    <connections>
+                        <outlet property="finalLabel" destination="2NR-5H-pvo" id="WgD-Yk-MMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWe-De-OoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5999999999999" y="-9.4452773613193415"/>
+        </scene>
+        <!--Navigator-->
         <scene sceneID="xq6-Bd-iPN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96K-G3-nmd" sceneMemberID="viewController">
+                <navigationController title="Navigator" automaticallyAdjustsScrollViewInsets="NO" id="96K-G3-nmd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DW0-Ia-AeQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DW0-Ia-AeQ" customClass="Navigation">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
